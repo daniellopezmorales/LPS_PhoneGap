@@ -1,0 +1,92 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #FAFAFA;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+
+.principal {
+	background: #F44336;
+	border-top: 20px solid #D32F2F;
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+
+.principal .formulario .boton {
+	background: none;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.principal .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+
+/* - Tareas - */
+.tareas .lista {
+	list-style: none;
+}
+
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+.tareas .lista li a:hover {
+	text-decoration: line-through;
+}
